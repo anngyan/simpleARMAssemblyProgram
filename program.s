@@ -1,5 +1,9 @@
-.code:
+.global _main
 
-	MOV r0, #5
-	MOV r1, #7
-	ADD r2, r0, r1
+_main:
+
+	mov x0, #5 
+	mov x1, #7
+	add x2, x0, x1
+	mov x7, #1
+	svc 0
